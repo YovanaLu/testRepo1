@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script type="text/javascript" src="kalkulator.js" ></script> 
+        <style>
+            #error {
+                border: 1px solid red;
+                margin-top: 10px;
+                padding: 10px;
+                display: none;
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body bgcolor="#F5DEB3">
+     
+      <font color="#9F7C3A"> 
+             
+       <div>
+       
+                <h2>Паттерны проектирования</h2>
+                <div id="accordion">
+                    <h3>Калькулятор (Паттерн "Стратегия")</h3>
+                    <div id="calc">
+                        <form action="kalkulator.html" id="strategy">
+                            <label>Число1: <input id="x" type="text" value="0" /></label>
+                            <label>Действие:
+                                <select id="op">
+                                    <option value="addition">+</option>
+                                    <option value="subtraction">-</option>
+                                    <option value="division">/</option>
+                                    <option value="multiplication">*</option>
+                                </select>
+                            </label>
+                            <label>Число2: <input id="y" type="text" value="0" /></label><br/>
+                            <pre><label><span>     =</span> <input id="Text1" type="text" value="0"  /></pre>
+                        </form>
+                    </div>
+                    <div id="error"></div>
+                 </div>
+                  
+          </div>
+        
+      </font> 
+   
+    </body>
+</html>
